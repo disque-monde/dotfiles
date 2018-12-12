@@ -5,18 +5,7 @@ alias lll='ls --color=auto -lh | less'
 alias la='ls --color=auto -A'
 alias s='sudo'
 alias systemctl='sudo systemctl'
-#pacman
-alias pi='sudo pacman -S'
-alias pr='sudo pacman -R'
-alias prs='sudo pacman -Rs'
-alias prsn='sudo pacman -Rsn'
-alias pss='sudo pacman -Ss'
-alias psu='sudo pacman -Syu'
-alias packinstall='sudo pacman -S'
-alias packremove='sudo pacman -R'
-alias packsearsh='sudo pacaur -Ss'
-alias packupgrade='pacaur -Syyu --noconfirm'
-alias packupgrade-all='pacaur -Syyu --noconfirm && for dir in $(find /home/jb/SysAdmin/Softs -name ".git"); do cd ${dir%/*}; git pull; cd -; done '
+
 #divers
 alias rm='rm -i'
 alias youtube-dl-audio='youtube-dl --extract-audio --audio-format mp3'
@@ -27,10 +16,9 @@ alias partagehttp='python3 -m http.server'
 alias rgrep='grep  -n -I -R -r'
 alias fgrep='grep  -n -I'
 alias mi='micro'
-alias vault='sudo cryptsetup luksOpen ~/.vault vault && sudo mount /dev/mapper/vault ~/mnt'
+
 #grep
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 #Systemctl
 alias service='sudo systemctl'
-alias home-ext='sudo cryptsetup luksOpen /dev/sdb1 home_crypt && sudo mount /dev/mapper/home_crypt /home/jb/Data'
